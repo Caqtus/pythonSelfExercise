@@ -7,7 +7,7 @@ def setAlarm():
     alarm_hour = alarm_time[0:2]
     alarm_minute = alarm_time[3:5]
     alarm_seconds = alarm_time[6:8]
-    alarm_period = alarm_time[9:11].upper()
+
 
     print(f'input accepted. {alarm_time} \n')
     print(f'Setting alarm')
@@ -22,7 +22,7 @@ def setAlarm():
 
         time_left_mm = int(alarm_minute) - int(cur_minute)
         time_left_ss = int(alarm_seconds) - int(cur_seconds)
-        time_left = f'{time_left_hh}:{time_left_mm}:{time_left_ss}'
+
 
         if time_left_ss < 0:
             time_left_ss = 60 - int(-1 * time_left_ss)
@@ -32,8 +32,6 @@ def setAlarm():
 
         if time_left_hh < 0:
             time_left_hh = 24 - int(-1 * time_left_hh)
-
-            # write text in every 5sec
 
         print('Time Left: {}:{}:{}'.format(str(time_left_hh).zfill(2), str(time_left_mm).zfill(2),
                                            str(time_left_ss).zfill(2)))
