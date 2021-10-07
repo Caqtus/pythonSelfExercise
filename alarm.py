@@ -1,6 +1,7 @@
 import time
 from datetime import datetime
 
+
 def setAlarm():
     alarm_time = str(input(f'Enter time to set alarm. HH:MM:SS \n'))
     alarm_hour = alarm_time[0:2]
@@ -32,11 +33,11 @@ def setAlarm():
         if time_left_hh < 0:
             time_left_hh = 24 - int(-1 * time_left_hh)
 
-            #write text in every 5sec
+            # write text in every 5sec
 
-        print('Time Left: {}:{}:{}'.format( str(time_left_hh).zfill(2), str(time_left_mm).zfill(2), str(time_left_ss).zfill(2)))
+        print('Time Left: {}:{}:{}'.format(str(time_left_hh).zfill(2), str(time_left_mm).zfill(2),
+                                           str(time_left_ss).zfill(2)))
         time.sleep(1)
-
 
         # mainLoop
         if (alarm_hour == cur_hour):

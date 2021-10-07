@@ -3,11 +3,8 @@ import time
 import acronyms
 import alarm
 import dice
-import oddoreven
 import exitApp
-
-
-
+import oddoreven
 
 func_dict = {}
 
@@ -18,6 +15,7 @@ func_dict[3] = acronyms.acronym
 func_dict[4] = alarm.setAlarm
 
 func_dict[99] = exitApp.exitapp
+
 
 def mainMenu():
     command = input(f'>>> Main Menu: \n 1. Roll the dice \n 2. Odd or Even \n 3. Make Acronyms \n 4. Set Alarm \n ')
@@ -30,19 +28,3 @@ def mainMenu():
 
 
 mainMenu()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
