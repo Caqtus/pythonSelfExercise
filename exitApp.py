@@ -1,4 +1,8 @@
+import sys
+import time
+
+
 def exitapp():
     while True:
         print('goodbye')
-        break
+        sys.exit()
