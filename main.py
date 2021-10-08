@@ -1,10 +1,11 @@
 import time
-
 import acronyms
 import alarm
 import dice
 import exitApp
 import oddoreven
+import splitmail
+import storygenerator
 
 func_dict = {}
 
@@ -13,12 +14,21 @@ func_dict[1] = dice.rolldice
 func_dict[2] = oddoreven.oddoreven
 func_dict[3] = acronyms.acronym
 func_dict[4] = alarm.setAlarm
+func_dict[5] = splitmail.splitMail
+func_dict[6] = storygenerator.generatestory
 
 func_dict[99] = exitApp.exitapp
 
 
 def mainMenu():
-    command = input(f'>>> Main Menu: \n 1. Roll the dice \n 2. Odd or Even \n 3. Make Acronyms \n 4. Set Alarm \n ')
+    command = input(f'>>> Main Menu: \n '
+                    f'1. Roll the Dice \n '
+                    f'2. Odd or Even \n '
+                    f'3. Make Acronyms \n '
+                    f'4. Set Alarm \n '
+                    f'5. Split Mail \n'
+                    f'6. Generate Random Story \n'
+                    f'99. Exit \n')
     func_dict[111] = mainMenu
 
     func_dict[int(command)]()
@@ -28,3 +38,9 @@ def mainMenu():
 
 
 mainMenu()
+
+
+
+
+#This is the link, where I'm doing this exercises.
+# https://medium.com/coders-camp/60-python-projects-with-source-code-919cd8a6e512

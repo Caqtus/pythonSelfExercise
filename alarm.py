@@ -43,3 +43,4 @@ def setAlarm():
                 if (alarm_seconds == cur_seconds):
                     print(f'WAKE UP')
                     break
+
