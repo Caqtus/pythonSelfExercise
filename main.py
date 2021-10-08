@@ -6,6 +6,7 @@ import exitApp
 import oddoreven
 import splitmail
 import storygenerator
+import passwordgenerator
 
 func_dict = {}
 
@@ -16,18 +17,20 @@ func_dict[3] = acronyms.acronym
 func_dict[4] = alarm.setAlarm
 func_dict[5] = splitmail.splitMail
 func_dict[6] = storygenerator.generatestory
+func_dict[7] = passwordgenerator.generatePassword
 
 func_dict[99] = exitApp.exitapp
 
 
 def mainMenu():
-    command = input(f'>>> Main Menu: \n '
-                    f'1. Roll the Dice \n '
-                    f'2. Odd or Even \n '
-                    f'3. Make Acronyms \n '
-                    f'4. Set Alarm \n '
+    command = input(f'>>> Main Menu: \n'
+                    f'1. Roll the Dice \n'
+                    f'2. Odd or Even \n'
+                    f'3. Make Acronyms \n'
+                    f'4. Set Alarm \n'
                     f'5. Split Mail \n'
                     f'6. Generate Random Story \n'
+                    f'7. Generate Password \n'
                     f'99. Exit \n')
     func_dict[111] = mainMenu
 
