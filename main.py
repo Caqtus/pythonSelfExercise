@@ -1,4 +1,6 @@
 import time
+
+import dummywindow
 import acronyms
 import alarm
 import dice
@@ -18,6 +20,7 @@ func_dict[4] = alarm.setAlarm
 func_dict[5] = splitmail.splitMail
 func_dict[6] = storygenerator.generatestory
 func_dict[7] = passwordgenerator.generatePassword
+func_dict[8] = dummywindow.dummyWindow
 
 func_dict[99] = exitApp.exitapp
 
@@ -31,6 +34,7 @@ def mainMenu():
                     f'5. Split Mail \n'
                     f'6. Generate Random Story \n'
                     f'7. Generate Password \n'
+                    f'8. Dummy Window \n'
                     f'99. Exit \n')
     func_dict[111] = mainMenu
 
@@ -46,4 +50,5 @@ mainMenu()
 
 
 #This is the link, where I'm doing this exercises.
+#plus, some improvisation
 # https://medium.com/coders-camp/60-python-projects-with-source-code-919cd8a6e512
